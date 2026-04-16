@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koh-Lanta Soundboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div>
+        <h1>Koh-Lanta Soundboard</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="category" id="deroule" data-category="déroulé">
+        <div class="section-header">
+          <h2>Déroulé</h2>
+          <div class="section-controls">
+            <button type="button" class="section-action-button toggle-button" data-action="toggle"
+              aria-label="Cacher ou afficher la section">Cacher</button>
+            <button type="button" class="section-action-button mute-button" data-action="mute"
+              aria-label="Couper le son de la catégorie">Mute</button>
+          </div>
+        </div>
+        <div class="buttons-grid" id="deroule-list"></div>
+      </section>
+
+      <section class="category" id="phrase-culte" data-category="phrase culte">
+        <div class="section-header">
+          <h2>Phrase culte</h2>
+          <div class="section-controls">
+            <button type="button" class="section-action-button toggle-button" data-action="toggle"
+              aria-label="Cacher ou afficher la section">Cacher</button>
+            <button type="button" class="section-action-button mute-button" data-action="mute"
+              aria-label="Couper le son de la catégorie">Mute</button>
+          </div>
+        </div>
+        <div class="buttons-grid" id="phrase-culte-list"></div>
+      </section>
+
+      <section class="category" id="ambiance" data-category="ambiance">
+        <div class="section-header">
+          <h2>Ambiance</h2>
+          <div class="section-controls">
+            <button type="button" class="section-action-button toggle-button" data-action="toggle"
+              aria-label="Cacher ou afficher la section">Cacher</button>
+            <button type="button" class="section-action-button mute-button" data-action="mute"
+              aria-label="Couper le son de la catégorie">Mute</button>
+          </div>
+        </div>
+        <div class="buttons-grid" id="ambiance-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
