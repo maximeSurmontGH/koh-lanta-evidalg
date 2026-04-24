@@ -56,22 +56,26 @@
         <div class="buttons-grid" id="ambiance-list"></div>
       </section>
 
-      <section class="category puzzle-section hidden" id="puzzle" data-category="puzzle">
+      <section class="category puzzle-section" id="puzzle" data-category="puzzle">
         <div class="section-header">
           <h2>Puzzle</h2>
-          <div class="section-controls">
-            <button type="button" class="section-action-button toggle-button" data-action="toggle"
-              aria-label="Cacher ou afficher la section">Afficher</button>
-          </div>
         </div>
         <div class="puzzle-content">
-          <div class="puzzle-item">
-            <h3>Aide</h3>
-            <img src="../puzzle/puzzle%20inspiration.webp" alt="Aide puzzle" />
+          <div class="puzzle-item hidden" data-puzzle-id="aide">
+            <div class="puzzle-item-header">
+              <h3>Aide</h3>
+              <button type="button" class="section-action-button toggle-button" data-action="toggle-puzzle"
+                aria-label="Afficher ou cacher l'aide">Afficher</button>
+            </div>
+            <img src="../puzzle/puzzle%20inspiration.webp" alt="Aide puzzle" class="puzzle-image" />
           </div>
-          <div class="puzzle-item">
-            <h3>Solution</h3>
-            <img src="../puzzle/puzzle%20solution.png" alt="Solution puzzle" />
+          <div class="puzzle-item hidden" data-puzzle-id="solution">
+            <div class="puzzle-item-header">
+              <h3>Solution</h3>
+              <button type="button" class="section-action-button toggle-button" data-action="toggle-puzzle"
+                aria-label="Afficher ou cacher la solution">Afficher</button>
+            </div>
+            <img src="../puzzle/puzzle%20solution.png" alt="Solution puzzle" class="puzzle-image" />
           </div>
         </div>
       </section>

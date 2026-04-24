@@ -168,26 +168,34 @@ button.sound-button span.tag {
   background: var(--surface);
 }
 
+.puzzle-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1rem;
+}
+
 .puzzle-item h3 {
-  margin: 0 0 1rem 0;
+  margin: 0;
   font-size: 1rem;
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-.puzzle-item img {
+.puzzle-image {
   width: 100%;
   height: auto;
   border-radius: 12px;
   display: block;
 }
 
-.puzzle-section.hidden .puzzle-content {
+.puzzle-item.hidden .puzzle-image {
   display: none;
 }
 
-.puzzle-section.hidden h2 {
+.puzzle-item.hidden .puzzle-item-header .toggle-button {
   opacity: 0.7;
 }
 
