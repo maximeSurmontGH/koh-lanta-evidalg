@@ -156,6 +156,41 @@ button.sound-button span.tag {
   color: var(--accent);
 }
 
+.puzzle-content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.puzzle-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: var(--surface);
+}
+
+.puzzle-item h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.puzzle-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.puzzle-section.hidden .puzzle-content {
+  display: none;
+}
+
+.puzzle-section.hidden h2 {
+  opacity: 0.7;
+}
+
 @media (min-width: 640px) {
   .buttons-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
